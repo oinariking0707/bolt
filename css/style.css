@@ -4,15 +4,46 @@
   content: "";
   clear: both;
 }
-.all-box{
+/*font-family*/
+body{
+  font-family: "Lato";
+}
+.font-w{
+  font-family: "Raleway";
+}
+/*レスポンシブ対応*/
+@media screen and (max-width:1199px){
+
+}
+
+@media screen and (max-width: 767px){}
+
+.theme-all{
   width: 100%;
-  background-color: #222;
+  background-color:#f2f2f2;
+}
+.what-all{
+  width: 100%;
+  background-color: #74cfae;
+}
+.later-all{
+  width: 100%;
+  background-color:#f2f2f2;
+}
+.skill-all{
+  width: 100%;
+  background-color: #4e4e4e;
+}
+.sns-all{
+  width: 100%;
+  background-color:#f2f2f2;
+}
+.footer-all{
+  width: 100%;
+  background-color: #74cfae;
 }
 
 /*header*/
-body{
-  font-family: 'Lato','Raleway';
-}
 .header{
   width: 100%;
   position: fixed;
@@ -84,6 +115,7 @@ body{
 }
 .what-textbox{
   width: 600px;
+  text-align: center;
 }
 .what-text-large{
   font-size: 24px;
@@ -104,22 +136,13 @@ body{
 .later-header{
 padding-top: 60px;
 padding-bottom: 40px;
-  position: relative;
 }
 /*Wのテキスト部分*/
 .later-header-text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  margin: auto;
   font-size: 24px;
+  text-align: center;
 }
-.v-text{
-  position: absolute;
-  top: 0;
-  right: 23%;
-}
+
 .later-img-box{
   width: 100%;
 }
