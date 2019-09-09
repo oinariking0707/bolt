@@ -23,32 +23,6 @@ body{
 }
 
 @media screen and (max-width: 767px){}
-
-.theme-all{
-  width: 100%;
-  background-color:#f2f2f2;
-}
-.what-all{
-  width: 100%;
-  background-color: #74cfae;
-}
-.later-all{
-  width: 100%;
-  background-color:#f2f2f2;
-}
-.skill-all{
-  width: 100%;
-  background-color: #4e4e4e;
-}
-.sns-all{
-  width: 100%;
-  background-color:#f2f2f2;
-}
-.footer-all{
-  width: 100%;
-  background-color: #74cfae;
-}
-
 /*header*/
 .header{
   width: 100%;
@@ -62,6 +36,7 @@ body{
 .bolt-icon{
   float: left;
   color: #4e4e4e;
+  opacity: 0.7;
 }
 .content-btn{
   float: right;
@@ -79,13 +54,12 @@ body{
 
 /*main*/
 .theme{
-  width: 100%;
   margin: 0 auto; 
   background-color: #f2f2f2;
+  padding-top: 250px;
 }
 .theme-box{
   text-align: center;
-  padding-top: 328px;
   padding-bottom: 250px;
 }
 .theme-text{
@@ -103,7 +77,6 @@ body{
 
 /*section what*/
 .what{
-  width: 100%;
   margin: 0 auto;
   background-color: #74cfae;
 }
@@ -129,7 +102,6 @@ body{
 
 /*artcle later*/
 .later{
-  width: 100%;
   margin: 0 auto;
   background-color: #f2f2f2;
 }
@@ -137,13 +109,12 @@ body{
   padding-top: 60px;
   padding-bottom: 70px;
 }
-.later-header{
-margin-bottom: 40px;
-}
+
 /*Wのテキスト部分*/
 .later-header-text{
   font-size: 24px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .later-img-box{
@@ -159,13 +130,16 @@ margin-bottom: 40px;
 .later-img:nth-child(3n){
   margin-right: 0px;
 }
+.later-img:nth-child(n+3){
+  margin-bottom: 0px;
+}
 .later-img:hover{
   opacity: 1;
 }
 .later-footer{
   width: 900px;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 90px;
 }
 .later-footer-text{
   width: 600px;
@@ -187,21 +161,18 @@ margin-bottom: 40px;
 
 
 .skill{
-  width: 100%;
   margin: 0 auto;
   background-color: #4e4e4e;
 }
 .skill-box{
 padding: 70px 0 100px 0;
-}
-.skill-header{
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 24px;
+text-align: center;
 }
 .skill-header-text{
   color: #fff;
   display: inline-block;
+  margin-bottom: 30px;
+  font-size: 24px;
 }
 .loading-box{
   width: 1100px;
@@ -220,21 +191,20 @@ padding: 70px 0 100px 0;
   font-size: 16px;
 }
 .sns{
-  width: 100%;
   margin: 0 auto;
   background-color: #f2f2f2;
 }
 .sns-box{
-padding: 200px 180px 200px 180px;
+padding: 200px 0 200px 0;
 box-sizing: border-box;
+text-align: center;
 }
 .sns-btn{
   background-color: #f2f2f2;
   padding: 20px;
   box-sizing: border-box;
   width: 185px;
-  float: left;
-  text-align: center;
+  display: inline-block;
   transition: 0.3s;
 }
 .sns-btn:hover{
@@ -246,11 +216,11 @@ box-sizing: border-box;
 }
 
 .footer{
-  width: 100%;
   margin: 0 auto;
   background-color: #74cfae;
 }
 .footer-box{
+  padding: 20px 0 25px 0;
 
 }
 .footer-text{
