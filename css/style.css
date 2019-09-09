@@ -4,6 +4,10 @@
   content: "";
   clear: both;
 }
+.inner{
+  width: 1100px;
+  margin: 0 auto;
+}
 /*font-family*/
 body{
   font-family: "Lato";
@@ -13,7 +17,9 @@ body{
 }
 /*レスポンシブ対応*/
 @media screen and (max-width:1199px){
-
+.header{
+  min-width: 768px;
+}
 }
 
 @media screen and (max-width: 767px){}
@@ -48,47 +54,39 @@ body{
   width: 100%;
   position: fixed;
   background-color: #fff;
-  padding: 15px 0;
+  z-index: 50; 
 }
 .content{
-  width: 1100px;
-  background-color: #fff;
-  margin: 0 auto;
+  padding: 15px 0;
 }
 .bolt-icon{
   float: left;
-  margin-left: 50px;
-  font-size: 50px;
-  color: #f2f2f2;
+  color: #4e4e4e;
 }
 .content-btn{
   float: right;
-  margin-right: 50px;
   background-color: #74cfae;
   font-size: 12px;
   color: #fff;
   padding: 14px 12px;
   box-sizing: border-box;
   text-decoration: none;
+  transition: 0.3s;
 }
 .content-btn:hover{
   color: #333;
-  transition: 0.3s;
 }
 
 /*main*/
-.main{
-  width: 1100px;
-  margin: 0 auto; 
-}
 .theme{
-  width: 1100px;
+  width: 100%;
   margin: 0 auto; 
   background-color: #f2f2f2;
 }
 .theme-box{
   text-align: center;
-  padding: 250px 0;
+  padding-top: 328px;
+  padding-bottom: 250px;
 }
 .theme-text{
   color: #74cfae;
@@ -98,20 +96,22 @@ body{
   box-sizing: border-box;
 }
 .theme-comment{
-  color: #e0c0c0;
+  color: #4e4e4e;
+  opacity: 0.5;
   font-size: 30px;
 }
 
 /*section what*/
 .what{
-  width: 1100px;
+  width: 100%;
   margin: 0 auto;
   background-color: #74cfae;
 }
 .what-box{
   display: flex;
   justify-content: space-around;
-  padding: 50px 100px 0 100px; 
+  padding: 50px 100px 0 100px;
+  box-sizing: border-box; 
 }
 .what-textbox{
   width: 600px;
@@ -120,7 +120,7 @@ body{
 .what-text-large{
   font-size: 24px;
   color: #f2f2f2;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
 }
 .what-text-small{
   font-size: 20px;
@@ -129,13 +129,16 @@ body{
 
 /*artcle later*/
 .later{
-  width: 1100px;
+  width: 100%;
   margin: 0 auto;
   background-color: #f2f2f2;
 }
+.later-box{
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
 .later-header{
-padding-top: 60px;
-padding-bottom: 40px;
+margin-bottom: 40px;
 }
 /*Wのテキスト部分*/
 .later-header-text{
@@ -146,27 +149,28 @@ padding-bottom: 40px;
 .later-img-box{
   width: 100%;
 }
+
 .later-img{
   float: left;
-  margin: 40px 100px 40px 0;
-  opacity: 0.7;
-}
-.later-img:hover{
-  opacity: 1;
+  margin: 0 100px 80px 0;
   transition: 0.3s;
+  opacity: 0.7;
 }
 .later-img:nth-child(3n){
   margin-right: 0px;
 }
+.later-img:hover{
+  opacity: 1;
+}
 .later-footer{
-  width: 100%;
-  padding: 50px 100px 70px 100px;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 .later-footer-text{
   width: 600px;
   margin-right: 90px;
   float: left;
-  text-align: center;
 }
 .later-content{
   background-color: #74cfae;
@@ -175,30 +179,32 @@ padding-bottom: 40px;
   color: #fff;
   float: left;
   text-decoration: none;
+  transition: 0.3s;
 }
 .later-content:hover{
   color: #333;
-  transition: 0.3s;
 }
 
 
 .skill{
-  width: 1100px;
+  width: 100%;
   margin: 0 auto;
   background-color: #4e4e4e;
 }
+.skill-box{
+padding: 70px 0 100px 0;
+}
 .skill-header{
   text-align: center;
-  padding: 70px 0 70px 0;
+  margin-bottom: 30px;
+  font-size: 24px;
 }
 .skill-header-text{
   color: #fff;
   display: inline-block;
 }
 .loading-box{
-  width: 100%;
-  padding: 0 20px 100px 20px;
-  box-sizing: border-box;
+  width: 1100px;
 }
 .loading-inbox{
   float: left;
@@ -214,24 +220,25 @@ padding-bottom: 40px;
   font-size: 16px;
 }
 .sns{
-  width: 1100px;
+  width: 100%;
   margin: 0 auto;
   background-color: #f2f2f2;
-  padding: 200px 180px 200px 180px;
-  box-sizing: border-box;
 }
 .sns-box{
+padding: 200px 180px 200px 180px;
+box-sizing: border-box;
 }
 .sns-btn{
   background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
   width: 185px;
   float: left;
   text-align: center;
+  transition: 0.3s;
 }
 .sns-btn:hover{
   background-color: #fff;
-  width: 185px;
-  transition: 0.3s;
 }
 .sns-icon{
   display: inline-block;
@@ -239,10 +246,12 @@ padding-bottom: 40px;
 }
 
 .footer{
-  width: 1100px;
+  width: 100%;
   margin: 0 auto;
   background-color: #74cfae;
-  padding: 20px 0 25px 0;
+}
+.footer-box{
+
 }
 .footer-text{
   text-align: right;
