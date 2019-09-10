@@ -53,6 +53,12 @@ body{
   padding: 10px;
 border: 1px solid #ddd;
 border-radius: 4px;
+opacity: 0.5;
+transition: 0.3s;
+cursor: pointer;
+}
+.burger:hover{
+  opacity: 1;
 }
 .burger-border{
   border: 2px solid #ddd;
@@ -249,9 +255,7 @@ text-align: center;
   .what-img-iphone{
     display: inline-block;
   }
-}
 /*laterレスポ*/
-@media screen and (max-width:1199px){
   .later-img{
     float: none;
     display: block;
@@ -275,9 +279,7 @@ text-align: center;
     display: inline-block;
     float: none;
   }
-  }
   /*skill rodingレスポ*/
-@media screen and (max-width:1199px){
   .inner{
     width: 97%;
   }
@@ -298,7 +300,6 @@ text-align: center;
   }
 }
 /*themeレスポ*/
-@media screen and (max-width: 767px){
   .theme-box{
     padding: 160px 0 130px 0;
   }
@@ -308,17 +309,12 @@ text-align: center;
   .theme-comment{
     font-size: 30px;
   }
-}
 /*snsレスポ*/
-@media screen and (max-width: 767px){
-  .inner{
-    width: 97%;
-  }
   .sns-box{
     padding: 50px 0 50px 0;
   }
   .sns-btn{
+    width: 100%;
     display: block;
     margin: 0 auto;
   }
-}
