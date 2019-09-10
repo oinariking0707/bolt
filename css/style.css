@@ -61,21 +61,12 @@ border-radius: 4px;
 .burger-border:last-child{
   margin-bottom: 0px;
 }
-/*headerレスポ*/
-@media screen and (max-width: 767px){
-  .burger{display: block;
-  }
-  .content-btn{
-    display: none;
-  }
-}
 
 /*theme*/
 .theme{
   margin: 0 auto; 
   background-color: #f2f2f2;
-  padding-top: 78px;
-  
+  padding-top: 78px;  
 }
 .theme-box{
   text-align: center;
@@ -94,24 +85,7 @@ border-radius: 4px;
   opacity: 0.5;
   font-size: 30px;
 }
-.br-sp{
-  display: none;
-}
-/*themeレスポ*/
-@media screen and (max-width: 767px){
-  .theme-box{
-    padding: 160px 0 130px 0;
-  }
-  .theme-text{
-    font-size: 80px;
-  }
-  .theme-comment{
-    font-size: 30px;
-  }
-  .br-sp{
-    display: block;
-  }
-}
+
 /*section what*/
 .what{
   margin: 0 auto;
@@ -135,25 +109,6 @@ border-radius: 4px;
 .what-text-small{
   font-size: 20px;
   color: #f2f2f2;
-}
-/*what-tab レスポ*/
-@media screen and (max-width:1199px){
-  .what-box{
-    display: block;
-    text-align: center;
-    padding:50px 0 25px 0;
-    
-  }
-  .what-textbox{
-    margin-top: 20px;
-    margin-left: 0;
-  }
-  .inner{
-    width: 97%;
-  }
-  .what-img-iphone{
-    display: inline-block;
-  }
 }
 
 /*artcle later*/
@@ -214,32 +169,6 @@ border-radius: 4px;
 .later-content:hover{
   color: #333;
 }
-/*laterレスポ*/
-@media screen and (max-width:1199px){
-.later-img{
-  float: none;
-  display: block;
-  margin: auto;
-  width: 300px;
-}
-.later-img:nth-child(3n){
-  margin-right: auto;
-  margin-bottom: 80px;
-}
-.later-img:last-child{
-  margin-bottom: 0px;
-}
-.later-footer-text{
-  float: none;
-  width: 100%;
-  margin-right: 0;
-  margin-bottom: 40px;
-}
-.later-content{
-  display: inline-block;
-  float: none;
-}
-}
 
 .skill{
   margin: 0 auto;
@@ -276,12 +205,14 @@ text-align: center;
   padding: 200px 0 200px 0;
   box-sizing: border-box;
   text-align: center;
+  font-size: 0;
 }
 .sns-btn{
   background-color: #f2f2f2;
   padding: 20px;
   box-sizing: border-box;
-  width: 185px;
+  font-size: 20px;
+  width: 25%;
   display: inline-block;
   transition: 0.3s;
 }
@@ -292,22 +223,60 @@ text-align: center;
   display: inline-block;
   color: #74cfae;
 }
-/*snsレスポ*/
-@media screen and (max-width: 767px){
-  .inner{
-    width: 97%;
-  }
-  .sns-box{
-    padding: 50px 0 50px 0;
-  }
-  .sns-btn{
+
+.footer{
+  margin: 0 auto;
+  background-color: #74cfae;
+}
+.footer-box{
+  padding: 20px 0 25px 0;
+}
+.footer-text{
+  text-align: right;
+  color: #fff;
+}
+/*what-tab レスポ*/
+@media screen and (max-width:1199px){
+  .what-box{
     display: block;
-    margin: 0 auto;
-    width: 100%;
+    text-align: center;
+    padding:50px 0 25px 0;
+  }
+  .what-textbox{
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .what-img-iphone{
+    display: inline-block;
   }
 }
-
-/*skill rodingレスポ*/
+/*laterレスポ*/
+@media screen and (max-width:1199px){
+  .later-img{
+    float: none;
+    display: block;
+    margin: auto;
+    width: 300px;
+  }
+  .later-img:nth-child(3n){
+    margin-right: auto;
+    margin-bottom: 80px;
+  }
+  .later-img:last-child{
+    margin-bottom: 0px;
+  }
+  .later-footer-text{
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .later-content{
+    display: inline-block;
+    float: none;
+  }
+  }
+  /*skill rodingレスポ*/
 @media screen and (max-width:1199px){
   .inner{
     width: 97%;
@@ -320,14 +289,36 @@ text-align: center;
     margin-bottom: 0px;
   }
 }
-.footer{
-  margin: 0 auto;
-  background-color: #74cfae;
+/*headerレスポ*/
+@media screen and (max-width: 767px){
+  .burger{display: block;
+  }
+  .content-btn{
+    display: none;
+  }
 }
-.footer-box{
-  padding: 20px 0 25px 0;
+/*themeレスポ*/
+@media screen and (max-width: 767px){
+  .theme-box{
+    padding: 160px 0 130px 0;
+  }
+  .theme-text{
+    font-size: 80px;
+  }
+  .theme-comment{
+    font-size: 30px;
+  }
 }
-.footer-text{
-  text-align: right;
-  color: #fff;
+/*snsレスポ*/
+@media screen and (max-width: 767px){
+  .inner{
+    width: 97%;
+  }
+  .sns-box{
+    padding: 50px 0 50px 0;
+  }
+  .sns-btn{
+    display: block;
+    margin: 0 auto;
+  }
 }
