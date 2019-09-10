@@ -298,7 +298,6 @@ text-align: center;
   .content-btn{
     display: none;
   }
-}
 /*themeレスポ*/
   .theme-box{
     padding: 160px 0 130px 0;
@@ -318,3 +317,4 @@ text-align: center;
     display: block;
     margin: 0 auto;
   }
+}
