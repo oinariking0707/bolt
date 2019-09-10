@@ -1,4 +1,7 @@
 /*再利用*/
+img{
+  vertical-align: top;
+}
 .clearfix::after{
   display: block;
   content: "";
@@ -47,7 +50,6 @@ body{
   float: right;
   display: none;
   width: 40px;
-  height: 30px;
   padding: 10px;
 border: 1px solid #ddd;
 border-radius: 4px;
@@ -56,11 +58,11 @@ border-radius: 4px;
   border: 2px solid #ddd;
   margin-bottom: 10px;
 }
+.burger-border:last-child{
+  margin-bottom: 0px;
+}
 /*headerレスポ*/
 @media screen and (max-width: 767px){
-  .inner{
-    width: 97%;
-  }
   .burger{display: block;
   }
   .content-btn{
@@ -97,9 +99,6 @@ border-radius: 4px;
 }
 /*themeレスポ*/
 @media screen and (max-width: 767px){
-  .inner{
-    width: 97%;
-  }
   .theme-box{
     padding: 160px 0 130px 0;
   }
@@ -139,16 +138,15 @@ border-radius: 4px;
 }
 /*what-tab レスポ*/
 @media screen and (max-width:1199px){
-  .inner{
-    width: 97%;
-  }
   .what-box{
     display: block;
     text-align: center;
-    padding-bottom: 25px;
+    padding:50px 0 25px 0;
+    
   }
   .what-textbox{
     margin-top: 20px;
+    margin-left: 0;
   }
   .inner{
     width: 97%;
@@ -218,15 +216,11 @@ border-radius: 4px;
 }
 /*laterレスポ*/
 @media screen and (max-width:1199px){
-  .inner{
-    width: 97%;
-  }
 .later-img{
   float: none;
   display: block;
   margin: auto;
   width: 300px;
-  height: 300px;
 }
 .later-img:nth-child(3n){
   margin-right: auto;
@@ -244,7 +238,6 @@ border-radius: 4px;
 .later-content{
   display: inline-block;
   float: none;
-  box-sizing: border-box;
 }
 }
 
@@ -326,6 +319,7 @@ text-align: center;
   .loading-inbox:last-child{
     margin-bottom: 0px;
   }
+}
 .footer{
   margin: 0 auto;
   background-color: #74cfae;
